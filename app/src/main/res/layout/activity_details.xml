@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetailsActivity">
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="408dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/detailImage"
+                android:src="@mipmap/placeholder"
+                android:layout_gravity="center"
+                android:layout_height="150dp"/>
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:text="Hello World"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:id="@+id/trackName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:text="Artist Name"
+                android:id="@+id/artistName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:text="Collection Name"
+                android:textAlignment="center"
+                android:id="@+id/collectionName"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20sp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:text="Artist Name"
+                android:id="@+id/collectionCensor"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/TrackViewBtn"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="trackView"
+                    android:textAllCaps="false"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/ArtistViewBtn"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textAllCaps="false"
+                    android:text="ArtistView"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
